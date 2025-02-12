@@ -33,7 +33,7 @@ COPY --from=builder /app/package.json ./package.json
 RUN npm install -g serve
 
 # Exponer el puerto de la aplicación
-EXPOSE 3000
+EXPOSE 5173
 
 # Comando para iniciar la aplicación en modo producción
-CMD ["serve", "-s", "dist", "-l", "3000"]
+CMD ["serve", "-s", "dist", "-l", "5173"]
