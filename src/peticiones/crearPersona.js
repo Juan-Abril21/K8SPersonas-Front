@@ -1,5 +1,5 @@
 export const postPersona = async (persona) => {
-  const url = " http://174.138.127.244/backend/api/personas/crearPesona";
+  const url = " http://174.138.127.244/backend/api/personas/crearPersona";
   console.log("Agregando cliente", persona);
   const resp = await fetch(url, {
     method: "POST",
